@@ -47,7 +47,7 @@ loss_disc.backward(retain_graph=True)
 opt_disc.step()
 ```
 
-[📂 View Implementation](./BasicGAN/)
+[📂 View Implementation](./Vanilla-GAN/)
 
 ---
 
@@ -77,7 +77,7 @@ x = layer(torch.cat((x, skip_connections[i]), dim=1))
 L_G = BCE(D(G(x)), 1) + λ × L1(G(x), y)
 ```
 
-[📂 View Implementation](./Pix2Pix/)
+[📂 View Implementation](./PIX2PIX/)
 
 ---
 
@@ -108,7 +108,7 @@ identity_horse = gen_h(horse)
 identity_loss = L1(horse, identity_horse) × λ_identity
 ```
 
-[📂 View Implementation](./CycleGAN/)
+[📂 View Implementation](./Cycle-GAN/)
 
 ---
 
